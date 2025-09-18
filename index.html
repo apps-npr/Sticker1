@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>พิมพ์สติกเกอร์ยา (3 บรรทัด)</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <header class="no-print">
+    <h1>พิมพ์สติกเกอร์ยา • 3 บรรทัดเต็มดวง</h1>
+  </header>
+
+  <div class="container">
+    <div class="card controls-pane">
+      <label for="search">ค้นหารายการยา</label>
+      <input id="search" type="text" placeholder="พิมพ์ชื่อยา...">
+
+      <div class="drug-list" id="drugList" aria-label="drug list"></div>
+
+      <div class="controls">
+        <div>
+          <label for="lot">Lot:</label>
+          <input id="lot" type="text" placeholder="เช่น L2901A">
+        </div>
+        <div>
+          <label for="exp">Exp:</label>
+          <input id="exp" type="date" placeholder="วว/ดด/ปปปป">
+        </div>
+        <div>
+          <label for="qty">จำนวนดวง/ยา</label>
+          <input id="qty" type="number" min="1" value="1">
+        </div>
+        <div>
+          <label for="size">ขนาดสติกเกอร์</label>
+          <select id="size">
+            <option value="small">8.5 × 4.5 cm</option>
+            <option value="large">8.5 × 6.0 cm</option>
+          </select>
+        </div>
+        <div class="full" style="display:flex; gap:8px; flex-wrap:wrap; margin-top:6px;">
+          <button id="addSel" class="primary">เพิ่มสติกเกอร์จากรายการที่ติ๊ก</button>
+          <button id="clearSel" class="danger">ล้างสติกเกอร์ทั้งหมด</button>
+          <button id="printSelectedBtn" class="accent">พิมพ์เฉพาะที่เลือก</button>
+          <button id="printBtn" class="ghost">พิมพ์ทั้งหมด</button>
+          <button id="closeBtn" class="ghost">ปิดหน้า</button>
+        </div>
+        <small class="full" style="color:#777">ทิป: ติ๊กมุมซ้ายบนของสติกเกอร์เพื่อเลือก แล้วกด “พิมพ์เฉพาะที่เลือก” หรือกด “พิมพ์ดวงนี้” บนแต่ละสติกเกอร์ได้</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <div id="printArea"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
