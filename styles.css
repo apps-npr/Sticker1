@@ -22,10 +22,10 @@ button.ghost{background:#f1f1f1}
 
 .sticker{position:relative;border:1px dashed #ccc;background:#fff;width:8.5cm;height:4.5cm;padding:.6cm .6cm .5cm .6cm;display:flex;flex-direction:column;justify-content:center}
 .sticker.size-large{height:6.0cm}
-.sticker .drug{font-size:20pt;font-weight:700;line-height:1.1;margin:0 0 .3cm 0;word-break:break-word}
-.sticker.size-large .drug{font-size:22pt}
-.sticker .row{font-size:16pt;line-height:1.2}
-.sticker.size-large .row{font-size:18pt}
+.sticker .drug{font-size:22pt;font-weight:700;line-height:1.1;margin:0 0 .3cm 0;word-break:break-word}
+.sticker.size-large .drug{font-size:24pt}
+.sticker .row{font-size:18pt;line-height:1.2}
+.sticker.size-large .row{font-size:20pt}
 .sticker .toolbar{position:absolute;right:.3cm;top:.3cm;display:flex;gap:6px}
 .sticker .toolbar button{padding:6px 8px;border-radius:6px}
 .sticker .selectbox{position:absolute;left:.3cm;top:.3cm;transform:scale(1.3)}
